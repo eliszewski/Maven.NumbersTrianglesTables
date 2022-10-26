@@ -64,6 +64,12 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+        String exp = "";
+        for(int i = start; i < stop; i+=step){
+            int currentNumber = i;
+            currentNumber = (int)Math.pow(currentNumber, exponent); //cast Math.pow from double to int
+            exp += currentNumber;
+        }
+        return exp;
     }
 }
