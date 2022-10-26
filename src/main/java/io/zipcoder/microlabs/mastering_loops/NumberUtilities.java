@@ -7,7 +7,7 @@ public class NumberUtilities {
         for(int i = start; i < stop; i++){
             if(i % 2 == 0){
                 evenNumbers += i;
-                //evenNumbers.concat(Integer.toString(i));
+                //evenNumbers.concat(Integer.toString(i)); failed
             }
         }
         return evenNumbers;
@@ -18,21 +18,29 @@ public class NumberUtilities {
         String oddNumbers = "";
         for(int i = start; i < stop; i++){
             if(i % 2 == 1){
-                oddNumbers += i;
+                oddNumbers += i; //
             }
         }
         return oddNumbers;
     }
 
 
-    public static String getSquareNumbers(int start, int stop, int step) {
-        return null;
+    public static String getSquareNumbers(int start, int stop, int step) { //note: readme did not indicate a step parameter
+        String sqrNumbers ="";
+        for(int i = start; i < stop; i+=step){
+            int currentNumber = i;
+            currentNumber = currentNumber * currentNumber;
+            sqrNumbers += currentNumber;
+        }
+        return sqrNumbers;
     }
 
-    public static String getRange(int start) {
-        //String range = "";
-        //for(int i =0; i <)
-        return null;
+    public static String getRange(int stop) { // changed this parameter from start to stop
+        String range = "";
+        for(int i = 0; i < stop; i++){
+            range += i;
+        }
+        return range;
     }
 
     public static String getRange(int start, int stop) {
@@ -46,7 +54,12 @@ public class NumberUtilities {
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String range = "" ;
+        for(int i = start; i < stop; i += step){
+            range += i;
+        }
+
+        return range;
     }
 
 

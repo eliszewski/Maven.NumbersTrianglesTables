@@ -111,7 +111,7 @@ public class NumberUtilitiesTest {
 
 
     @Test
-    public void testGetRange1C() {
+    public void testGetRange1C() { //passed
         // : Given
         String expected = "51015";
         int start = 5;
@@ -173,7 +173,7 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetEvenNumbers() {
         // : Given
-        String expected = "5791113151719"; //expects odd numbers? test should fail
+        String expected = "681012141618"; //changed expected string to even numbers
         int start = 5;
         int stop = 20;
 
@@ -187,7 +187,7 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetOddNumbers() {
         // : Given
-        String expected = "681012141618"; //expects even numbers? test should fail
+        String expected = "5791113151719"; //changed expected string to odd numbers
         int start = 5;
         int stop = 20;
         int step = 5;
