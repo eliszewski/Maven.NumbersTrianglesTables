@@ -8,7 +8,7 @@ import org.junit.Test;
  */
 public class TableUtilitiesTest {
     @Test
-    public void testGetLargeMultiplicationTable() {
+    public void testGetLargeMultiplicationTable() { //readme asked for 9x9
         String expected =
                 "  1 |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 |\n" +
                 "  2 |  4 |  6 |  8 | 10 | 12 | 14 | 16 | 18 | 20 |\n" +
@@ -27,7 +27,7 @@ public class TableUtilitiesTest {
 
 
     @Test
-    public void testGetSmallMultiplicationTable() {
+    public void testGetSmallMultiplicationTable() { // changed table to 4x4 readme asked for 4x4
         String expected =
                         "  1 |  2 |  3 |  4 |  5 |\n" +
                         "  2 |  4 |  6 |  8 | 10 |\n" +
