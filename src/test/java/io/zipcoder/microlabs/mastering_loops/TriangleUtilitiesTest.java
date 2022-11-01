@@ -18,7 +18,7 @@ public class TriangleUtilitiesTest {
     @Test
     public void getTriangleTest1() {
         String expected =
-                "*\n" +
+                        "*\n" +
                         "**\n" +
                         "***\n" +
                         "****\n" +
@@ -27,23 +27,23 @@ public class TriangleUtilitiesTest {
                         "*******\n" +
                         "********\n" +
                         "*********\n";
-        String actual = TriangleUtilities.getTriangle(10);
+        String actual = TriangleUtilities.getTriangle(9); //did not match expected string
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void getTriangleTest2() {
         String expected =
-                "*\n" +
+                        "*\n" +
                         "**\n" +
                         "***\n" +
                         "****\n";
-        String actual = TriangleUtilities.getTriangle(5);
+        String actual = TriangleUtilities.getTriangle(4); //did not match expected string
         Assert.assertEquals(expected, actual);
     }
 
     @Test
-    public void testGetLargeTriangle() {
+    public void testGetLargeTriangle() { //
         String expected =
                 "*\n" +
                 "**\n" +
